@@ -1,0 +1,157 @@
+﻿<Window x:Class="Alfira.MVVM.View.SoundCreatingWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Alfira.MVVM.View"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterOwner"
+        Height="355" Width="400"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        ResizeMode ="NoResize"
+        Background ="Transparent"
+        FontSize="14">
+
+    <Border Background="{DynamicResource Secondary}"
+            CornerRadius="10">
+        <Border Background="{DynamicResource Background}"
+                Height="350" Width=" 395"
+                CornerRadius="10"
+                MouseDown="Border_MouseDown">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <!--Trimming-->
+                <Image x:Name="Image_soundRender"
+                       Grid.ColumnSpan="2"
+                       Margin="10"/>
+                
+                <Border x:Name="LeftBorder"
+                        HorizontalAlignment="Left"
+                        Grid.ColumnSpan="2"
+                        Height="auto"
+                        Background="{DynamicResource Background}"
+                        Margin="16,0,0,0"/>
+
+                <Border x:Name="RightBorder"
+                        HorizontalAlignment="Right"
+                        Grid.ColumnSpan="2"
+                        Height="auto"
+                        Background="{DynamicResource Background}"
+                        Margin="0,0,16,0"/>
+                    
+                <Slider x:Name="StartSlider"
+                        Template = "{StaticResource HorizontalSlider}"
+                        Grid.Row="1"
+                        Grid.ColumnSpan="2"
+                        Minimum="0"
+                        Margin="10,0,10,0"
+                        ValueChanged="StartSlider_ValueChanged"/>
+
+                <Slider x:Name="FinishSLider"
+                        Template = "{StaticResource HorizontalSlider}"
+                        Grid.Row="1"
+                        Grid.ColumnSpan="2"
+                        Value="60"
+                        Margin="10,10,10,0"
+                        ValueChanged="FinishSLider_ValueChanged"/>
+
+                
+                <!--Parameters-->
+                <TextBlock Style="{StaticResource TransparentTextBlock}"
+                           Grid.Row="2"
+                           Text="Name :"
+                           HorizontalAlignment="Right"/>
+
+                <TextBlock Style="{StaticResource TransparentTextBlock}"
+                   Grid.Row="3"
+                   Text="HotKey :"
+                   HorizontalAlignment="Right"/>
+                
+                <TextBlock Style="{StaticResource TransparentTextBlock}"
+                   Grid.Row="4"
+                   Text="Volume :"
+                   HorizontalAlignment="Right"
+                   Margin="5,0,0,0"/>
+
+                <TextBox x:Name="NameTextBox"
+                 Style="{StaticResource AlfiraTextBox}"
+                 Grid.Column="1" Grid.Row="2"
+                 Height="20"
+                 Margin="5,0,5,0"
+                 Text="{Binding Name}"/>
+
+                <StackPanel Grid.Row="3" Grid.Column="1"
+                    Orientation="Horizontal">
+
+                    <TextBlock x:Name="TextBlock_HotKey"
+                       Style="{StaticResource TransparentTextBlock}"
+                       Height="20"
+                       Text="???"
+                       Margin="5,2,5,0"/>
+
+                    <Button x:Name="btn_Hotkey"
+                    Style="{DynamicResource BorderButton}"
+                    Height="40" Width="120"
+                    Content="Register HotKey"
+                    Margin="5,0,0,0"
+                    Click="btn_Hotkey_Click"/>
+
+                </StackPanel>
+
+                <Grid Grid.Column="1" Grid.Row="4"
+              VerticalAlignment="Center">
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition Width="25"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Slider x:Name="VolumeSlider"
+                    Template="{StaticResource HorizontalSlider}"
+                    Minimum="0"
+                    Maximum="100"
+                    Margin="5,2,5,0"
+                    ValueChanged="VolumeSlider_ValueChanged"/>
+
+                    <TextBlock x:Name="VolumeTextBox"
+                       Style="{StaticResource TransparentTextBlock}"
+                       Grid.Column="1"/>
+                </Grid>
+
+
+                <StackPanel Grid.Row="5" Grid.ColumnSpan="2"
+                            Orientation="Horizontal"
+                            HorizontalAlignment="Center">
+
+                    <Button x:Name="btn_CreateSound"
+                    Style="{DynamicResource BorderButton}"
+                    Content="Create"
+                    Height="40" Width="120"
+                    Margin="5"
+                    Click="btn_CreateSound_Click"/>
+
+                    <Button x:Name="btn_Cancel"
+                    Style="{DynamicResource BorderButton}"
+                    Height="40" Width="120"
+                    Content="Cancel"
+                    Margin="5"
+                    Click="btn_Cancel_Click"/>
+                </StackPanel>
+            </Grid>
+        </Border>
+    </Border>
+</Window>

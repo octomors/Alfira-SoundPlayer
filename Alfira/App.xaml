@@ -4,6 +4,13 @@
              xmlns:local="clr-namespace:Alfira"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="./Themes/TieflingAsmodeusTheme.xaml"/>
+                <ResourceDictionary Source="./Styles/Buttons.xaml"/>
+                <ResourceDictionary Source="./Styles/Slider.xaml"/>
+                <ResourceDictionary Source="./Styles/TextControls.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>

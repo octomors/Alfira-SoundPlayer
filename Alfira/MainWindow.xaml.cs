@@ -1,6 +1,9 @@
-﻿using System;
+﻿using Alfira.MVVM.Model;
+using Alfira.MVVM.ViewModel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -23,6 +26,20 @@ namespace Alfira
         public MainWindow()
         {
             InitializeComponent();
+            this.DataContext = new MainViewModel(this);
+        }
+
+        private void Border_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            if(e.LeftButton == MouseButtonState.Pressed)
+            {
+                DragMove();
+            }
+        }
+
+        private void ButtonMinimize_Click(object sender, RoutedEventArgs e)
+        {
+            Application.Current.MainWindow.WindowState = WindowState.Minimized;
         }
     }
 }
