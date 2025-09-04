@@ -1,5 +1,4 @@
-﻿using GlobalHotKey.Internal;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Globalization;
@@ -7,8 +6,6 @@ using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Input;
-using System.Windows.Interop;
 
 namespace GlobalHotKey
 {
@@ -36,7 +33,6 @@ namespace GlobalHotKey
             _windowHandleSource.AddHook(messagesHandler);
 
             _registered = new Dictionary<HotKey, int>();
-            _registeredId = new Dictionary<int, HotKey>();
         }
 
         /// <summary>
