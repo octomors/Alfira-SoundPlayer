@@ -1,6 +1,6 @@
 # General
 [![en](https://img.shields.io/badge/lang-en-blue.svg)](https://github.com/octomors/Alfira-SoundPlayer)
-[![ru](https://img.shields.io/badge/lang-ru-red.svg)](https://github.com/octomors/Alfira-SoundPlayer/blob/main/README.md)
+[![ru](https://img.shields.io/badge/lang-ru-red.svg)](https://github.com/octomors/Alfira-SoundPlayer/blob/main/README.ru.md)
 
 Alfira is an application that lets you play sounds through a specified output device (or virtual cable) using customizable hotkeys. It runs in the background, so you can use it while gaming, streaming, or whatever 🙄💅.
 
