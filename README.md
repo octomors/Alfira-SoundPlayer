@@ -1,16 +1,23 @@
-# Общие сведения
-Alfira - Программа, которая позволяет проигрывать звуки в указанное выходное устройство (или виртуальный кабель) по нажатию сочетания клавиш. Работает в фоновом режиме.
+# General
+[![en](https://img.shields.io/badge/lang-en-blue.svg)](https://github.com/octomors/Alfira-SoundPlayer)
+[![ru](https://img.shields.io/badge/lang-ru-red.svg)](https://github.com/octomors/Alfira-SoundPlayer/blob/main/README.md)
 
-Зачем? Совместив звуковые дорожки альфиры и микрофона, можно моментально запускать подходящие мемы / музыку в ответ на происходящее событие в голосовом чате. Ну или можно поддерживать общение вообще без использования микрофона, заранее подготовив набор ключевых фраз.
+Alfira is an application that lets you play sounds through a specified output device (or virtual cable) using customizable hotkeys. It runs in the background, so you can use it while gaming, streaming, or whatever 🙄💅.
 
-# Использование
-В главном окне можно просматривать список всех звуков, а также добавлять / удалять / редактировать отдельные звуки.
+Why? By mixing Alfira’s audio with your microphone input, you can instantly trigger the perfect meme or music clip in response to what’s happening in voice chat. Or, you can even “speak” without using a microphone at all—just prepare a set of key phrases in advance.
 
-<img width="468" height="651" alt="image" src="https://github.com/user-attachments/assets/957c9957-6c65-4740-8333-ca6f890f339d" />
+# Usage
+The main window displays a list of all sounds, allowing you to add, delete, or edit them.
+
+<p align="center">
+  <img width="468" height="651" alt="image" src="https://github.com/user-attachments/assets/957c9957-6c65-4740-8333-ca6f890f339d" />
+</p>
 
 
-Нажав на кнопку добавления звука, можно выбрать .mp3 / .wav файл. После чего назначить ему имя и сочетание клавиш (автоматически считываются после нажатия кнопки Register HotKey), а также дополнительно обрезать (Для удобства строится визуальное представление звука) или изменить громкость.
+Clicking the "Add Sound" button lets you select an .mp3 or .wav file. You can then assign it a name and a hotkey (automatically detected after pressing the Register Hotkey button), and optionally trim the audio (a visual waveform is displayed for convenience) or adjust its volume.
 
-Отредактированный звук при необходимости переформатируется и копируется в файлы программы.
+If needed, the edited sound is automatically converted to the appropriate format and copied into the application’s files. 
 
+<p align="center">
 <img width="490" height="710" alt="image" src="https://github.com/user-attachments/assets/ecba9071-eab0-43e0-b3c2-8612218d3db2" />
+</p>
