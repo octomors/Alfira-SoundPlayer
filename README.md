@@ -4,7 +4,7 @@
 
 Alfira is an application that lets you play sounds through a specified output device (or virtual cable) using customizable hotkeys. It runs in the background, so you can use it while gaming, streaming, or whatever 🙄💅.
 
-Why? By mixing Alfira’s audio with your microphone input, you can instantly trigger the perfect meme or music clip in response to what’s happening in voice chat. Or, you can even “speak” without using a microphone at all—just prepare a set of key phrases in advance.
+What’s it all for? By mixing Alfira’s audio track with your microphone input, you can instantly trigger the perfect meme or music clip in response to what’s happening in voice chat. Or, you can even “speak” without using a microphone at all — just prepare a set of key phrases in advance.
 
 # Usage
 The main window displays a list of all sounds, allowing you to add, delete, or edit them.
